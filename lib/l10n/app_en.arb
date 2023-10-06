@@ -1,0 +1,30 @@
+{
+"titel":"ToDoList",
+"list":"List",
+"setting":"Settings",
+"english":"English",
+"arabic":"Arabic",
+"light":"Light",
+"dark":"Dark",
+"language":"Language",
+"delete":"Delete",
+"mode":"Mode",
+"title1":"ADD NEW TASK",
+"des":"Des",
+"title2":"please Enter your title",
+"des2":"Enter Your Description",
+"title_task":"Title",
+"des_task":"Des",
+"add":"ADD",
+"select_date":"Select Date",
+"edit_task":"Edit Task",
+"save_changes":"Save Changes",
+"title_chan":"This is Title",
+"detail_chan":"Task Details"
+
+
+
+
+
+
+}

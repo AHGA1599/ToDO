@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "154684265946",
+    "project_id": "last-to-do",
+    "storage_bucket": "last-to-do.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154684265946:android:71a0abbbe5ae656b8e5ce3",
+        "android_client_info": {
+          "package_name": "com.example.atodo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbpvkedToB3h_eN-2cnBcG-wqAcELinNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
