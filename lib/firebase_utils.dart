@@ -31,6 +31,9 @@ class FirebaseUtils {
       'dateTime':task.dateTime?.microsecondsSinceEpoch,
 
     });
+  }
 
+   static Future<void> DoneInFierBase (String id)async{
+     await FirebaseUtils.getTasksCollection().doc(id).update({'isDone':true});
   }
 }

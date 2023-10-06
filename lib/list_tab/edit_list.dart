@@ -33,6 +33,7 @@ class _EditListState extends State<EditList> {
     title = widget.task.title ?? "";
     description = widget.task.description ?? "";
   }
+  late AppConfigProvider provider ;
 
   @override
   Widget build(BuildContext context) {
@@ -150,6 +151,7 @@ class _EditListState extends State<EditList> {
           .timeout(Duration(milliseconds: 500), onTimeout: () {
             FirebaseUtils.getTasksCollection();
             print('done updaet');
+            provider.getAllTaskesFormFireStore();
 
       });
     }

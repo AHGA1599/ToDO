@@ -68,7 +68,9 @@ class TasksWidget extends StatelessWidget {
                           style: Theme.of(context)
                               .textTheme
                               .titleMedium
-                              ?.copyWith(color: MyTheme.primarylight),
+                              ?.copyWith(color:  task.isDone!
+                              ? MyTheme.greenlight
+                              : MyTheme.primarylight,),
                         ),
                       ),
                       Padding(
@@ -82,12 +84,18 @@ class TasksWidget extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    provider.markAsDone(task.id!).timeout(Duration(milliseconds: 500),onTimeout:(){
+                      provider.getAllTaskesFormFireStore();
+                    } );
+                  },
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 21),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Theme.of(context).primaryColor),
+                        color:  task.isDone!
+                            ? MyTheme.greenlight
+                            : MyTheme.primarylight,),
                     child: Icon(
                       Icons.check,
                       size: 30,
